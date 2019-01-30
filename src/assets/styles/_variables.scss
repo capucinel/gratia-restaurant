@@ -1,9 +1,9 @@
-@import '../../../node_modules/@angular/material/theming';
-<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+
 /*
  * Global variables use on the app.
  * This file must be imported in the component if you want to use one of this variable.
  */
+
 
 // Colors
 $rimary-orange: #d89b64;
@@ -11,22 +11,20 @@ $primary-green: #829c2c;
 
 $primary-light-color: #ffffff;
 $primary-dark-color: #000000;
-$font-text-color-darker: mat-color($custom-primary, 600);
-$font-text-color-lighter: mat-color($custom-primary, 300);
 
-$border-color: mat-color($custom-primary, 400);
+$light:#f8f8f8;
+$light2: #e7e7e7;
+$light3: #e6e6e6;
+$dark : #161b29;
 
-//Palettes
-$custom-primary: (
-  50 : #f8f8f8,
-  100 : #e7e7e7,
-  200 : #e6e6e6,
-  300 : #8b909d,
-  400: #8a8f9c,
-  500 : #263045,
-  600 : #151b28,
-  700 : #161b29,
-  );
+$font-text-color-darker: #263045;
+$font-text-color-lighter: #8b909d;
+$border-color: #8a8f9c;
+$header-font: #485491;
+$font-title: #151b28;
+$font-header: #485471;
+
+
 
 // Fonts
 $font-size-h1: 45px;
@@ -35,11 +33,11 @@ $font-size-h1-mobile: 30px;
 $font-size-small: 12px;
 $font-size-extra-small: 10px;
 $font-size-normal: 16px;
-$font-size-btn: 18px;
-$font-size-medium: 22px;
+// $font-size-btn: 18px;
+$font-size-italic: 18px;
 
 $font-text: 'Poppins', sans-serif;
-$font-text-itallic: 'Crimson Text', serif;
+$font-text-italic: 'Crimson Text', serif;
 
 // Transition
 // $transition-in: .5s all ease-in;

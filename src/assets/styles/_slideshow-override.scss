@@ -1,0 +1,11 @@
+@import 'variables';
+
+@mixin slideshow-override() {
+
+  //center images
+  .slideshow-container .slides {
+    background-position: center;
+    width: 60%;
+  }
+
+}

@@ -1,0 +1,10 @@
+@import '../../assets/styles/variables';
+
+@mixin italic-text($color) {
+  font-family: $font-text-italic;
+  font-size: $font-size-italic;
+  font-style: italic;
+  color: $color;
+  text-align: center;
+
+}
