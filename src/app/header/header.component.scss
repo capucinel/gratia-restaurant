@@ -1,23 +1,50 @@
 @import '../../assets/styles/variables';
 @import '../../assets/styles/mixins-customs';
 
+$margin: 20px;
 .header {
   // width: 100%;
   background-color: $font-title;
 
+  &-menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 30px 0;
+
+    &-logo {
+      display: flex;
+      align-items: center;
+
+      &-brand {
+        font-family: $font-text;
+        color: $primary-light-color;
+        font-family: $font-text;
+        font-size: $font-size-normal;
+        font-weight: $font-weight-bold;
+        margin-left: $margin/2;
+      }
+    }
+  }
+
   &-carroussel {
-background-position: center;
-  height: 400px;
+    background-position: center;
+    height: 400px;
 
   }
 
   &-bottom-text {
     @include italic-text($font-header);
+    margin: $margin 0
   }
 
-  &-down-arrow:hover {
-    box-shadow: 0px 0px 150px #000000;
-    z-index: 2;
+  &-down-arrow {
+    display: block;
+    margin: $margin auto;
+    padding-bottom: $margin;
+    animation: blink 2s steps(5, start) infinite;
+      -webkit-animation: blink 2s steps(5, start) infinite;
+
+    &:hover {
     -webkit-transition: all 200ms ease-in;
     -webkit-transform: scale(1.5);
     -ms-transition: all 200ms ease-in;
@@ -29,4 +56,15 @@ background-position: center;
   }
 }
 
+}
 
+@keyframes blink {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink {
+  to {
+    visibility: hidden;
+  }
+}

@@ -1,0 +1,24 @@
+@import '../../../assets/styles/variables';
+@import '../../../assets/styles/mixins-customs';
+
+.menu {
+text-align: right;
+  &-item {
+
+    text-decoration: none;
+    color: $primary-light-color;
+    font-family: $font-text;
+    font-size: $font-size-normal;
+    font-weight: $font-weight-bold;
+    border-radius: 15px;
+    padding: 6px 8px;
+    margin: 0 5px;
+    transition-property: background-color, border-radius;
+    transition-duration: 0.8s;
+    // transition-delay: 2s;
+
+    &:hover {
+      background-color: $primary-orange;
+    }
+  }
+}

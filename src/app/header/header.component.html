@@ -1,17 +1,23 @@
 <div class="header">
+  <div class="header-menu">
+    <div class="header-menu-logo">
+      <img src='assets/images/logo.png'>
+      <span class="header-menu-logo-brand">Gratia</span>
+    </div>
+  <app-menu></app-menu>
+  </div>
   <div class="header-carroussel">
-<slideshow
-[imageUrls]="imageUrls"
-[height]="height"
-[minHeight]="minHeight"
-[arrowSize]="arrowSize"
-[showArrows]="true"
-[backgroundSize]="backgroundSize"
-[backgroundPosition]=backgroundPosition>
-</slideshow>
-</div>
-<div class="header-bottom-text">
+    <slideshow
+    [imageUrls]="imageUrls"
+    [height]="height"
+    [minHeight]="minHeight"
+    [arrowSize]="arrowSize"
+    [showArrows]="true"
+    [backgroundSize]="backgroundSize">
+    </slideshow>
+  </div>
+  <div class="header-bottom-text">
   and perfection is  not a detail
-</div>
+  </div>
   <img class="header-down-arrow" src="assets/images/down-arrow.svg">
 </div>

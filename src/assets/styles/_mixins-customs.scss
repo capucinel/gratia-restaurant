@@ -2,9 +2,8 @@
 
 @mixin italic-text($color) {
   font-family: $font-text-italic;
-  font-size: $font-size-italic;
+  font-size: $font-size-medium;
   font-style: italic;
   color: $color;
   text-align: center;
-
 }
