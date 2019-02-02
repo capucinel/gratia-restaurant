@@ -2,6 +2,7 @@
 @import '../../assets/styles/mixins-customs';
 
 $margin: 20px;
+
 .header {
   // width: 100%;
   background-color: $font-title;
@@ -42,20 +43,19 @@ $margin: 20px;
     margin: $margin auto;
     padding-bottom: $margin;
     animation: blink 2s steps(5, start) infinite;
-      -webkit-animation: blink 2s steps(5, start) infinite;
+    -webkit-animation: blink 2s steps(5, start) infinite;
 
     &:hover {
-    -webkit-transition: all 200ms ease-in;
-    -webkit-transform: scale(1.5);
-    -ms-transition: all 200ms ease-in;
-    -ms-transform: scale(1.5);
-    -moz-transition: all 200ms ease-in;
-    -moz-transform: scale(1.5);
-    transition: all 200ms ease-in;
-    transform: scale(1.5);
+      -webkit-transition: all 200ms ease-in;
+      -webkit-transform: scale(1.5);
+      -ms-transition: all 200ms ease-in;
+      -ms-transform: scale(1.5);
+      -moz-transition: all 200ms ease-in;
+      -moz-transform: scale(1.5);
+      transition: all 200ms ease-in;
+      transform: scale(1.5);
+    }
   }
-}
-
 }
 
 @keyframes blink {
@@ -63,6 +63,7 @@ $margin: 20px;
     visibility: hidden;
   }
 }
+
 @-webkit-keyframes blink {
   to {
     visibility: hidden;
