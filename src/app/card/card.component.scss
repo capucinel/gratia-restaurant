@@ -1,0 +1,20 @@
+@import '../../assets/styles/variables';
+@import '../../assets/styles/mixins-customs';
+
+.card {
+  width: 33%;
+  background-color: rgb(23, 32, 42);
+
+  &-img {
+    width: 100%;
+  }
+
+  &-title {
+    @include title($primary-orange);
+
+  }
+
+  &-description {
+
+  }
+}

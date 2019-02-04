@@ -7,3 +7,12 @@
   color: $color;
   text-align: center;
 }
+
+@mixin title($color) {
+  font-family: $font-text;
+  font-size: $font-size-h1;
+  color: $color;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: $font-weight-bold;
+}

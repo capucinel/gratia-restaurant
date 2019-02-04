@@ -6,12 +6,14 @@ import {SlideshowModule} from 'ng-simple-slideshow';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { MenuComponent } from './header/menu/menu.component';
+import { CardComponent } from './card/card.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    MenuComponent
+    MenuComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,
