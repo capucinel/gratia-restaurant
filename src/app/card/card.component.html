@@ -1,29 +1,15 @@
-<!-- <div class="test" *ngIf="!hoverOn" (mouseover)="hover()">
-    <div class="test-aqua"></div>
+<div [@cardHover]="hoverOff ? 'hoverOff' : 'hoverOn'" class="card" (mouseover)="hover()" (mouseleave)="hover()">
+  <div class="card-text">
+    <div [@title]="hoverOff ? 'hoverOff' : 'hoverOn'" class="card-title">
+      desserts
+    </div>
+    <div [@border]="hoverOff ? 'hoverOff' : 'hoverOn'" class="card-border"></div>
+    <div [@description]="hoverOff ? 'hoverOff' : 'hoverOn'" class="card-description">
+      lorem ipsum bidule truc
+    </div>
   </div>
-    <div class="test-hover" *ngIf="hoverOn" (mouseleave)="hoverO()">
-      <div class="test-violet"></div>
-    </div> -->
-
-<div class="card" *ngIf="!hoverOn" (mouseover)="hover()">
-    <div [ngStyle]="{'background-image': getUrl()}" class="card-img"></div>
-
-  <div class="layer"></div>
-
-  <!-- <div class=card-text> -->
-    <div class="card-title">desserts</div>
-    <div class="card-description">lorem ipsum bidule truc</div>
-  <!-- </div> -->
-  </div>
+  <div [@layer]="hoverOff ? 'hoverOff' : 'hoverOn'" class="layer"></div>
 
 
-<div class="card-hover" *ngIf="hoverOn" (mouseleave)="hoverO()">
-    <div [ngStyle]="{'background-image': getUrl()}" class="card-img-hover"></div>
-    <div class="card-title-hover">desserts</div>
-    <div class="card-description-hover">lorem ipsum bidule truc</div>
+  <div [ngStyle]="{'background-image': getUrl()}" class="card-img"></div>
 </div>
-<br>
-<br>
-<br>
-<br>
-

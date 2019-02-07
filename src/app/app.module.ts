@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import {SlideshowModule} from 'ng-simple-slideshow';
 import { AppComponent } from './app.component';
@@ -17,6 +17,7 @@ import { CardComponent } from './card/card.component';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
     SlideshowModule
   ],
