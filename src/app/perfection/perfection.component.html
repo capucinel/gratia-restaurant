@@ -1,0 +1,9 @@
+<div class="cards-list" fxLayout="row-wrap" fxLayoutAlign="center" fxLayoutGap="30px">
+<app-card
+  *ngFor="let item of (dataMenus | slice: 0:3)"
+  [itemMenu]="item"
+  fxFlex.gt-sm="40%"
+  fxFlex.lt-md="20%"
+>
+</app-card>
+</div>

@@ -6,20 +6,24 @@ import {SlideshowModule} from 'ng-simple-slideshow';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { MenuComponent } from './header/menu/menu.component';
-import { CardComponent } from './card/card.component';
+import { CardComponent } from './perfection/card/card.component';
+import { PerfectionComponent } from './perfection/perfection.component';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     MenuComponent,
-    CardComponent
+    CardComponent,
+    PerfectionComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    SlideshowModule
+    SlideshowModule,
+    FlexLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]
