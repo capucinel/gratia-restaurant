@@ -5,6 +5,8 @@
   background-size: cover;
   height: 325px;
   width: 100%;
+  transition-duration: 1s;
+  margin-top: 50px;
 
   &:hover {
     transform: scale(1.1);
@@ -13,8 +15,8 @@
 
   &-layer {
     background-color: rgba(0, 0, 0, 0.8);
-    transition-property: background-color;
-    transition-duration: 0.1s;
+    transition-property: background-color, box-shadow;
+    transition-duration: 0.7s;
     width: 100%;
     height: 100%;
     display: flex;
@@ -25,9 +27,9 @@
 
   &-title {
     @include title;
-    // padding-top: 30px;
+    padding-top: 30px;
     color: #d89b64;
-    transition-property: color;
+    transition-property: padding-top;
     transition-duration: 0.1s;
   }
 
@@ -43,20 +45,23 @@
     padding-top: 25px;
   }
 
+  &-layer:hover>&-title,
+    {
+    padding-top: 170px;
+  }
+
+  &-layer:hover>&-border,
   &-layer:hover>&-title {
     color: #151b29;
-    margin-top: 185px;
   }
+
+  &-layer:hover>&-description {
+    color: $font-text-color-darker;
+  }
+
 
   &-layer:hover {
-    background-color: transparent;
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 6px -6px 35px 0px rgba(0, 0, 0, 0.3);
   }
 }
-
-
-
-
-
-
-
-
