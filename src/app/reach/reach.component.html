@@ -1,0 +1,5 @@
+<app-large-band title="how we reach this?" subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit."></app-large-band>
+<div class="reach-list-cards" fxLayout="row-wrap" fxLayoutGap="3%">
+
+  <app-card-reach *ngFor="let item of dataReach" [itemReach]="item" fxFlex.gt-sm="33%" fxFlex.lt-md="100%"></app-card-reach>
+</div>
