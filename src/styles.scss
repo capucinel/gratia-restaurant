@@ -1,1 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+@import './assets/styles/slideshow-override';
+@import './assets/styles/variables';
+@import './assets/styles/mixins-customs';
+
+body {
+  @include slideshow-override();
+}
+
+h1 {
+  @include title($font-title);
+}
+
+h2 {
+  @include subtitle($font-text-color-lighter);
+
+}

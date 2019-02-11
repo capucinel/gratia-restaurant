@@ -1,0 +1,19 @@
+@import '../../assets/styles/variables';
+@import '../../assets/styles/mixins-customs';
+
+.perfection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &-cards-list {
+    margin-bottom: $margin-height;
+    width: 100%;
+  }
+  &-btn {
+    @include textBtn;
+    display: block;
+    border-bottom: 1px solid $primary-orange;
+    cursor: pointer;
+}
+  }

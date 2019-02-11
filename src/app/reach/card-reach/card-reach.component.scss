@@ -1,0 +1,29 @@
+@import '../../../assets/styles/variables';
+@import '../../../assets/styles/mixins-customs';
+
+.reach {
+  width: 100%;
+  background-color: $light;
+  padding: 50px 0;
+  transition-duration: 0.5s;
+
+  &:hover {
+    transform: scale(1.1);
+    background-color: $font-title;
+    box-shadow: 6px -6px 35px 0px rgba(0, 0, 0, 0.3);
+  }
+
+  &-title {
+    font-size: $font-size-medium;
+    font-family: $font-text;
+    color: $primary-orange;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 20px 0;
+  }
+
+  &-subtitle {
+    @include subtitle($font-text-color-lighter);
+  }
+}

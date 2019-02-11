@@ -1,0 +1,31 @@
+@import '../../assets/styles/variables';
+
+@mixin subtitle($color) {
+  font-family: $font-text-italic;
+  font-size: $font-size-medium;
+  font-style: italic;
+  color: $color;
+  text-align: center;
+  font-weight: normal;
+}
+
+@mixin title($color) {
+  font-family: $font-text;
+  font-size: $font-size-h1;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: $font-weight-bold;
+  color: $color;
+}
+
+@mixin textBtn {
+  font-family: $font-text;
+  font-size: $font-size-normal;
+  text-transform: uppercase;
+  font-weight: $font-weight-bold;
+  line-height: 2.25;
+  letter-spacing: 0.4px;
+  color: $primary-orange;
+  text-align: center;
+
+}

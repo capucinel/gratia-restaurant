@@ -1,0 +1,67 @@
+@import '../../../assets/styles/variables';
+@import '../../../assets/styles/mixins-customs';
+
+.card {
+  background-size: cover;
+  height: 325px;
+  width: 100%;
+  transition-duration: 1s;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.1);
+
+  }
+
+  &-layer {
+    background-color: rgba(0, 0, 0, 0.7);
+    transition-property: background-color, box-shadow;
+    transition-duration: 0.7s;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &-title {
+    @include title($primary-orange);
+    padding-top: 30px;
+    // color: #d89b64;
+    transition-property: padding-top;
+    transition-duration: 0.1s;
+  }
+
+  &-border {
+    width: 45px;
+    padding: 10px 0;
+    border-bottom: 1px solid;
+    color: #d89b64;
+  }
+
+  &-description {
+    @include subtitle($primary-light-color);
+    padding-top: 25px;
+  }
+
+  &-layer:hover>&-title,
+    {
+    padding-top: 170px;
+  }
+
+  &-layer:hover>&-border,
+  &-layer:hover>&-title {
+    color: #151b29;
+  }
+
+  &-layer:hover>&-description {
+    color: $font-text-color-darker;
+  }
+
+
+  &-layer:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 6px -6px 35px 0px rgba(0, 0, 0, 0.3);
+  }
+}
