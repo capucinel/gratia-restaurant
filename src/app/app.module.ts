@@ -13,6 +13,7 @@ import { LargeBandComponent } from './large-band/large-band.component';
 import { DetailsComponent } from './details/details.component';
 import { ReachComponent } from './reach/reach.component';
 import { CardReachComponent } from './reach/card-reach/card-reach.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { CardReachComponent } from './reach/card-reach/card-reach.component';
     DetailsComponent,
     ReachComponent,
     CardReachComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
