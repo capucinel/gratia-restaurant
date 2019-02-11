@@ -34,7 +34,7 @@ $margin: 20px;
   }
 
   &-bottom-text {
-    @include italic-text($font-header);
+    @include subtitle($font-header);
     margin: $margin 0
   }
 

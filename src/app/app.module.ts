@@ -9,6 +9,8 @@ import { MenuComponent } from './header/menu/menu.component';
 import { CardComponent } from './perfection/card/card.component';
 import { PerfectionComponent } from './perfection/perfection.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { LargeBandComponent } from './large-band/large-band.component';
+import { DetailsComponent } from './details/details.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     HeaderComponent,
     MenuComponent,
     CardComponent,
-    PerfectionComponent
+    PerfectionComponent,
+    LargeBandComponent,
+    DetailsComponent
   ],
   imports: [
     BrowserModule,

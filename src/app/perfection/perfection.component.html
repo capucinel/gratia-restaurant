@@ -1,9 +1,8 @@
-<div class="cards-list" fxLayout="row-wrap" fxLayoutAlign="center" fxLayoutGap="30px">
-<app-card
-  *ngFor="let item of (dataMenus | slice: 0:3)"
-  [itemMenu]="item"
-  fxFlex.gt-sm="40%"
-  fxFlex.lt-md="20%"
->
-</app-card>
+<div class="perfection">
+  <app-large-band title="perfection" subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit."></app-large-band>
+  <div class="perfection-cards-list" fxLayout="row-wrap" fxLayoutGap="3%">
+    <app-card *ngFor="let item of (dataMenus | slice: 0:3)" [itemMenu]="item" fxFlex.gt-sm="33%" fxFlex.lt-md="100%">
+    </app-card>
+  </div>
+  <a class="perfection-btn">check other offers</a>
 </div>

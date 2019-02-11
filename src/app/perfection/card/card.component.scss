@@ -6,7 +6,7 @@
   height: 325px;
   width: 100%;
   transition-duration: 1s;
-  margin-top: 50px;
+  cursor: pointer;
 
   &:hover {
     transform: scale(1.1);
@@ -14,7 +14,7 @@
   }
 
   &-layer {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.7);
     transition-property: background-color, box-shadow;
     transition-duration: 0.7s;
     width: 100%;
@@ -26,9 +26,9 @@
   }
 
   &-title {
-    @include title;
+    @include title($primary-orange);
     padding-top: 30px;
-    color: #d89b64;
+    // color: #d89b64;
     transition-property: padding-top;
     transition-duration: 0.1s;
   }
@@ -41,7 +41,7 @@
   }
 
   &-description {
-    @include italic-text($primary-light-color);
+    @include subtitle($primary-light-color);
     padding-top: 25px;
   }
 
@@ -61,7 +61,7 @@
 
 
   &-layer:hover {
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.2);
     box-shadow: 6px -6px 35px 0px rgba(0, 0, 0, 0.3);
   }
 }
