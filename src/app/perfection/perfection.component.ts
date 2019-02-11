@@ -10,10 +10,7 @@ import { cardsMenuData } from '../../assets/data/cards-menu-data';
 export class PerfectionComponent implements OnInit {
   @Input() dataMenus: CardMenu[];
 
-
-
   ngOnInit() {
     this.dataMenus = cardsMenuData;
-
   }
 }

@@ -16,26 +16,24 @@
   &-box {
     background-color: $primary-light-color;
     padding: 25px;
+    min-width: 40%;
     text-align: center;
 
     &-border {
       border: 1px solid rgba(138, 143, 156, 0.25);
-      padding: 35px 20px 60px;
+      padding: 5% 4% 12%;
 
       h2 {
         margin-bottom: 45px;
       }
     }
-
-
   }
 
   &-btn {
     @include textBtn;
     border: 1px solid rgba(21, 27, 40, 0.15);
     padding: 15px;
+    cursor: pointer;
   }
 }
 
-.details-box-border h2 {
-}

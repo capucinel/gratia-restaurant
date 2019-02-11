@@ -11,6 +11,8 @@ import { PerfectionComponent } from './perfection/perfection.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { LargeBandComponent } from './large-band/large-band.component';
 import { DetailsComponent } from './details/details.component';
+import { ReachComponent } from './reach/reach.component';
+import { CardReachComponent } from './reach/card-reach/card-reach.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { DetailsComponent } from './details/details.component';
     CardComponent,
     PerfectionComponent,
     LargeBandComponent,
-    DetailsComponent
+    DetailsComponent,
+    ReachComponent,
+    CardReachComponent,
   ],
   imports: [
     BrowserModule,
