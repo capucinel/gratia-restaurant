@@ -1,4 +1,6 @@
 import { CardMenu } from './cards-menu-data.model';
+import { ReachCard } from './reach-card.model';
+
 
 export const cardsMenuData: CardMenu[] = [
   {
@@ -6,52 +8,71 @@ export const cardsMenuData: CardMenu[] = [
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     image: '/assets/images/desserts-home.jpg',
     url: '#'
-},
-{
+  },
+  {
     label: 'smoothies',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     image: '/assets/images/smoothies.jpg',
     url: '#'
-},
-{
+  },
+  {
     label: 'breakfast',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     image: '/assets/images/breakfast.jpg',
     url: '#'
-},
-{
+  },
+  {
     label: 'main dishes',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     image: '/assets/images/main-dishes.jpg',
     url: '#'
-},
-{
+  },
+  {
     label: 'soups',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     image: '/assets/images/soups.jpg',
     url: '#'
-},
-{
+  },
+  {
     label: 'hamburgers',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     image: '/assets/images/hamburgers.jpg',
     url: '#'
-},
-{
+  },
+  {
     label: 'desserts',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     image: '/assets/images/desserts-menu.jpg',
     url: '#'
-},
-{
+  },
+  {
     label: 'barbecue',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     image: '/assets/images/barbecue.jpg',
     url: '#'
-},
-{
+  },
+  {
     label: 'salads',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     image: '/assets/images/salads.jpg',
     url: '#'
-}];
+  }];
+
+export const reachCardsData: ReachCard[] = [
+  {
+    label: 'different locations',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    url: '#'
+  },
+  {
+    label: 'fresh products',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    url: '#'
+  },
+  {
+    label: 'the best for the beginning',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    url: '#'
+  }
+];
+

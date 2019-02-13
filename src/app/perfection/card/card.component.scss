@@ -5,12 +5,11 @@
   background-size: cover;
   height: 325px;
   width: 100%;
-  transition-duration: 1s;
+  transition-duration: 0.5s;
   cursor: pointer;
 
   &:hover {
     transform: scale(1.1);
-
   }
 
   &-layer {
@@ -23,12 +22,16 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+      box-shadow: 6px -6px 35px 0px rgba(0, 0, 0, 0.3);
+    }
   }
 
   &-title {
     @include title($primary-orange);
     padding-top: 30px;
-    // color: #d89b64;
     transition-property: padding-top;
     transition-duration: 0.1s;
   }
@@ -57,11 +60,5 @@
 
   &-layer:hover>&-description {
     color: $font-text-color-darker;
-  }
-
-
-  &-layer:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-    box-shadow: 6px -6px 35px 0px rgba(0, 0, 0, 0.3);
   }
 }
