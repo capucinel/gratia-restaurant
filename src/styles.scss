@@ -5,6 +5,8 @@
 
 body {
   @include slideshow-override();
+  width: 100%;
+  font-family: $font-text;
 }
 
 h1 {
